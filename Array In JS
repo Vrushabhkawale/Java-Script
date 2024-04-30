@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript</title>
+</head>
+<body>
+    <h2> Array in JavaScript</h2>
+
+
+****** JS *************
+<script src="Array.js"></script>
+<script>
+
+var num = [10, 20, 30];
+document.write(`number size : ${num.length} <br/>`);
+
+//var num1 = new Array(10, 20, 30, 40);
+//document.write(`number size : ${num1.length} <br/>`);
+
+num.push(50);
+document.write(`number size push() : ${num} <br/>`);
+
+num.pop();
+document.write(`number size pop() : ${num} <br/>`);
+
+num.unshift(100);
+document.write(`unshift () : ${num} <br/>`);
+
+num.shift();
+document.write(`shift () : ${num} <br/>`);
+
+num.splice(1, 0, 500, 20);
+document.write(`splice() : ${num} <br/>`);
+
+var index = num.indexOf(500);
+document.write(`IndexOf() :${index} <br/>`);
+
+var index = num.lastIndexOf();
+document.write(`Last IndexOf() :${index} <br/>`);
+
+num.reverse();
+document.write(`reverse () : ${num} <br/>`);
+var vk = ['v', 's', 'a', 'c'];
+vk.sort();
+document.write(`sort () : ${vk} <br/>`)
+
+//filter function 
+number1 = [9, 1, 5, 5, 78, 9];
+for (var i = 0; i <= number1.length; i++) {
+    document.write(`${number1[i]}  `);
+}
+
+
+
+<script>
+</body>
+</html>
